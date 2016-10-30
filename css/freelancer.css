@@ -198,6 +198,7 @@ section.success {
   }
 }
 #portfolio .portfolio-item {
+  text-align: center;
   margin: 0 0 15px;
   right: 0;
 }
