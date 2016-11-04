@@ -21,10 +21,11 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
-                // url: "admin@rememberthebacon.co",
-                // url: "http://www..zhuolizhang.com/email_from_personal_page",
+                // url: "././mail/contact_me.php",
+                url: "https://api.mailgun.net/v3/rememberthebacon.mailgun.org/messages",
                 type: "POST",
+                username: 'api',
+                password: 'zzl12345678',
                 data: {
                     name: name,
                     phone: phone,
