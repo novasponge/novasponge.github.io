@@ -9,7 +9,7 @@ $(function() {
             // Prevent spam click and default submit behaviour
             $("#btnSubmit").attr("disabled", true);
             event.preventDefault();
-            
+
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -22,6 +22,8 @@ $(function() {
             }
             $.ajax({
                 url: "././mail/contact_me.php",
+                // url: "admin@rememberthebacon.co",
+                // url: "http://www..zhuolizhang.com/email_from_personal_page",
                 type: "POST",
                 data: {
                     name: name,
